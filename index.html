@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css"> 
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    
+     <div class="container">
+        <p>CASIO</p>
+        
+            <form action="" >
+            <input type="text" id="screen">
+
+            
+            <br>
+            <input class="button operator" type="button" value="("  onclick="btnClick(value)">
+            <input class="button operator" type="button" value=")" onclick="btnClick(value)">
+            <input class="button operator" type="button" value="."  onclick="btnClick(value)" >
+            <input class="button delete" type="button" value="del"  onclick="DeleteScreen(value)">
+            <input class="button clear" type="button" value="C"  onclick="clearScreen(value)" >
+            <br>
+            <input class="button number" type="button" value="7" onclick="btnClick(value)">
+            <input class="button number" type="button" value="8"  onclick="btnClick(value)">
+            <input class="button number" type="button" value="9"  onclick="btnClick(value)" >
+            <input class="button operator" type="button" value="%" onclick="percentage(value)" >
+            <input class="button operator" type="button" value="^" onclick="power(value)">
+            <br>
+            <br>
+            <input class="button number" type="button" value="4" onclick="btnClick(value)" >
+            <input class="button number" type="button" value="5"  onclick="btnClick(value)">
+            <input class="button number" type="button" value="6"  onclick="btnClick(value)" >
+            <input class="button operator" type="button" value="*"  onclick="btnClick(value)">
+            <input class="button operator" type="button" value="/"  onclick="btnClick(value)" >
+            <br>
+            <br>
+            <input class="button number" type="button" value="1" onclick="btnClick(value)" >
+            <input class="button number" type="button" value="2"  onclick="btnClick(value)" >
+            <input class="button number" type="button" value="3"   onclick="btnClick(value)" >
+            <input class="button operator" type="button" value="+" onclick="btnClick(value)">
+            <input class="button operator" type="button" value="-" onclick="btnClick(value)" >
+            <br>
+            <br>
+            <input class="button answer" type="button" value="ans"onclick="answerClick(value)" >
+            <input class="button number" type="button" value="0" onclick="btnClick(value)" >
+            <input class="button number" type="button" value="+/-"  onclick="plus(value)">
+            <input class="button result" type="button" value="=" onclick="findResult(value)" >
+
+            <br>
+        </form>
+     
+    </div>
+
+    <script src="./calc.js"></script>
+</body>
+</html>
